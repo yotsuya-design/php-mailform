@@ -11,6 +11,7 @@
 // --- Start of settings ---
 $TO_EMAIL = "your-email@example.com"; // TODO: Please change this to your email address
 $FROM_NAME = "Contact Form";
+$FROM_MAIL = "noreply@example.com";
 $ORG_NAME = "Your Organization";
 // --- End of settings ---
 
@@ -50,7 +51,7 @@ $body = $emailData['body'];
 // Mail settings
 $to = $TO_EMAIL;
 $from_name = $FROM_NAME;
-$from = mb_encode_mimeheader($from_name) . " <" . $email . ">";
+$from = mb_encode_mimeheader($from_name) . " <" . $FROM_MAIL . ">";
 $org_name = mb_encode_mimeheader($ORG_NAME);
 
 // Header settings
